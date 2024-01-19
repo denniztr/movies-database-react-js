@@ -12,26 +12,34 @@ export const Main = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://www.omdbapi.com/?apikey=5d707a54&s=lost')
+        axios.get('https://www.omdbapi.com/?apikey=5d707a54&s=lost')
             .then((res) => {
                 if (res.status === 200) {
                     setMovies(res.data.Search)
                     setLoading(false)
                 }
             })
-            .catch(error => setError(error.message))
+            .catch((error) => {
+                console.err(error.message)
+                setError(error.message)
+                setLoading(false)
+            })
     }, []);
 
     const handleSearch = (str, type = "all") => {
         setLoading(true)
-        axios.get(`http://www.omdbapi.com/?apikey=5d707a54&s=${str}${type !== "all" ? `&type=${type}` : ""}`)
+        axios.get(`https://www.omdbapi.com/?apikey=5d707a54&s=${str}${type !== "all" ? `&type=${type}` : ""}`)
             .then((res) => {
                 if (res.status === 200) {
                     setMovies(res.data.Search)
                     setLoading(false)
                 }
             })
-            .catch(error => setError(error.message))
+            .catch((error) => {
+                console.err(error.message)
+                setError(error.message)
+                setLoading(false)
+            })
     }
 
     return (
