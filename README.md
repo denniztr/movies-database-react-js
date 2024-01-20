@@ -2,7 +2,7 @@
 Welcome to the Movie Database App! This is a simple project that utilizes the OMDB API to fetch information about movies and TV series. The application is built with React, materializecss, and Vite.
 
 ## Demo
-Check out the live demo: https://github.com/your-username/your-repository-name
+Check out the live demo: [Movie Databse](https://65ab9d1393d77d7474eafe40--sage-bombolone-6bb184.netlify.app/).
 
 ## Features
 
