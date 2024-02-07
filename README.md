@@ -24,4 +24,4 @@ I plan to add the following features to improve the functionality of the app:
     Comments and ratings for movies or TV series.
     Sorting the retrieved data by the release year.
 
-Feel free to explore the app and stay tuned for updates!
+Feel free to explore the app
